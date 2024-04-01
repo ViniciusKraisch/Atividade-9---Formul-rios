@@ -1,0 +1,72 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="parte1"></section>
+    <container:form>Vinizada</container:form>
+    <!-- O <form> é um elemento HTML que serve como container para os elementos de um formulário. Ele especifica onde e como os dados do formulário serão enviados quando submetidos -->
+    
+    <section class="parte2"></section>
+    <div>
+ 
+        <input type="text" name="nome">
+        <!--Cria um campo de texto simples.-->
+        
+        <input type="password" name="senha">
+        <!--Cria um campo de senha onde o texto inserido é mascarado.-->
+
+        <input type="checkbox" name="interesses" value="esportes"> Esportes
+        <input type="checkbox" name="interesses" value="música"> Música
+        <!-- Cria uma caixa de seleção que permite ao usuário selecionar uma ou várias opções.-->
+    </div>
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <input type="radio" name="sexo" value="feminino"> Feminino
+        <!--Cria botões de rádio que permitem ao usuário selecionar uma opção de um conjunto.-->
+
+        <input type="number" name="idade">
+        <!--Cria um campo de entrada numérico.-->
+
+        <input type="date" name="data_nascimento">
+        <!--Cria um campo de entrada para data.-->
+    <div>
+        <input type="email" name="email">
+        <!--Cria um campo de entrada para e-mail.-->
+
+        <input type="file" name="arquivo">
+        <!--Cria um campo de entrada para upload de arquivos.-->
+
+        <input type="submit" value="Enviar"> 
+        <!--Cria um botão de envio de formulário.-->
+
+        <input type="reset" value="Limpar">   
+        <!--Cria um botão para redefinir os valores do formulário.-->
+    </div> 
+    <div>
+    <section class="parte3"></section>
+
+    <form action="/processador de dados.html" method="post">
+        <!--O atributo action especifica para onde os dados do formulário serão enviados-->
+        <!--O atributo method especifica o método HTTP a ser usado para enviar os dados(POST) -->
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <!--Campo de texto para o nome-->
+
+        <label for="email">e-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <!--Campo de texto para o e-mail-->
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+        <!--Campo de texto multi-linha para a mensagem-->
+
+        <input type="submit" value="Enviar">
+        <!--Botão de envio-->
+    </form>
+    </div>
+
+</body>
+</html>
